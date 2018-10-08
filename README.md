@@ -1,6 +1,12 @@
 # Russmedia Tee iOS
 iOS SDK for Russmedia Engagement Engine
 
+### Take it on board
+
+Use downloaded framework as embedded binary for your project. Cocoapods are comming soon.
+
+![embedded](https://github.com/russmedia/Tee-ios-sdk/blob/master/readme_img/embedded.png)
+
 ### Make it run
 
 First thing is, to import the framework.
@@ -148,7 +154,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   TEE.IS_DEV = true
 	
-
   TEE.instance.onCall = { callName in
    print("Tee is making call")
   }
