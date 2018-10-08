@@ -80,7 +80,7 @@ Whenever you determinate, that user is not anonymous anymore, you call init meth
 TEE.instance.initConnection(userID: "bruce.wayne@gothamail.com")
 ```
 
-Logout method will cancle session with given user and will get anonymous token to starts with points from 0.
+Logout method will cancel session with given user and will get anonymous token to starts with points from 0.
 
 ```swift
 TEE.instance.logout()
@@ -118,7 +118,7 @@ TEE.instance.resignViewForChallenges(withKey: "uniqueViewID")
 
 ### User activity indication
 
-Engagement Engine measures also user activity in general. The best to set `activityPing()` call is UIApplicationDelegate methods.
+Engagement Engine measures also user activity in general. The best place to run `activityPing()` call is UIApplicationDelegate methods.
 
 ```swift
 func applicationDidEnterBackground(_ application: UIApplication) {
@@ -137,8 +137,8 @@ Engagement Engine is looking for two mandatory strings under `TEE` dictionary, t
 - TEE (Dictionary)
   - ApiToken (String)
   - liveSocketEndpoint (String)
-  - devSocketEndpoint1 (String) // optional
-  - devSocketEndpointXY (String) // optional
+  - devSocketEndpoint1 (String) // optional socket endpoint, selectable in debug console
+  - devSocketEndpointXY (String) // optional socket endpoint, selectable in debug console
   - themeColorHex (String) // optional
 
 ### Sample implementation
