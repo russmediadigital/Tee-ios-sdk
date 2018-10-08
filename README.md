@@ -1,7 +1,7 @@
 # Russmedia Tee iOS
 iOS SDK for Russmedia Engagement Engine
 
-###Make it run
+### Make it run
 
 First thing is to inmport the framework.
 
@@ -9,7 +9,7 @@ First thing is to inmport the framework.
 import TeeSDK
 ```
 
-###Enabling the debug mode
+### Enabling the debug mode
 
 Debug mode is needs to enabled by setting static property before first call of `TEE.instance`. Debug mode enables UISwitch in left bottom corner of the screen, which opens console with all TEE traffic. Console screens also offers the button to switch socket endpoints, if some debug endpoints are provided in Info.plist. See Info.plist requitrements lower. Default calue is `false`
 
@@ -19,7 +19,7 @@ TEE.IS_DEV = true
 
 Once inported, you can access singleton instance of the framework and implement some delegates methods and properties.
 
-###onCall
+### onCall
 
 Called on every request call, that is made by framework.
 
@@ -29,7 +29,7 @@ TEE.instance.onCall = { callName in
 }
 ```
 
-###onMessageReceived
+### onMessageReceived
 
 Called when any message arrives. `onCall` and `onMessageReceived` may be a good place to paste own tracking of activity.
 
@@ -39,7 +39,7 @@ TEE.instance.onMessageReceived = { message in
 }
 ```
 
-###verbosePrint
+### verbosePrint
 
 Detail preview of communication with socket server in console. Default value is `false`
 
@@ -47,7 +47,7 @@ Detail preview of communication with socket server in console. Default value is 
 TEE.instance.verbosePrint = true
 ```
 
-###presentingViewController
+### presentingViewController
 
 UIViewController that is used for presenting overlayed modal views, for engagement engine notifications. You can disable notification keeping this property not set.
 
@@ -55,7 +55,7 @@ UIViewController that is used for presenting overlayed modal views, for engageme
 TEE.instance.presentingViewController = window?.rootViewController
 ```
 
-###Connection to server
+### Connection to server
 
 Since all props and delegates are set, you can enable connection itself with tracking of anonymous user.
 Activity will be tracked and saved under new generic collector token.
@@ -76,7 +76,7 @@ Logout method will cancle session with given user and will get anonymous token t
 TEE.instance.logout()
 ```
 
-###Attaching and fireing challanges in code
+### Attaching and fireing challanges in code
 
 To enable challenges for each part of app, you call register method for every screen, user visits.
 Detail ViewControllers are registrered for challanges with unique string `detailPageId` and reference to root view of the controller.
@@ -91,7 +91,7 @@ Thank challenges can be triggered by hand, using challenge ID with call:
 TEE.instance.fireChallenge(withElementId: ".article-detail.selected .share.facebook")
 ```
 
-###Attaching and fireing via IB
+### Attaching and fireing via IB
 
  You can attach challenge code as `accessibilityIdentifier` to an UIButton or `TEEUIScrollViewObservable` (for triggering scroll challenge, this ScrollView class is needed), so when registering detil page with `registerChallengesFor(detailPageId: "uniqueID", view: self.view)`, challenge will be attached, and fired automatically when interacting with the element.
 
@@ -99,7 +99,7 @@ TEE.instance.fireChallenge(withElementId: ".article-detail.selected .share.faceb
 @IBOutlet weak var scrollView: TEEUIScrollViewObservable!
 ```
 
-###User activity indication
+### User activity indication
 
 Engagement Engine measures also user activity in general. The best to set `activityPing()` call is UIApplicationDelegate methods.
 
@@ -113,7 +113,7 @@ func applicationDidBecomeActive(_ application: UIApplication) {
 }
 ```
 
-###Sample usage
+### Sample usage
 
 ```swift
 @UIApplicationMain
