@@ -103,7 +103,7 @@ TEE.instance.fireChallenge(withElementId: ".article-detail.selected .share.faceb
 
 ### Attaching and fireing via IB
 
-You can set ID of challenge as `accessibilityIdentifier` of an UIButton or `TEEUIScrollViewObservable`. Than, when you register detil page with `registerChallengesFor(detailPageId:, view:)`, challenges will be attached, and fired automatically when interacting with the element.
+You can set ID of challenge as `accessibilityIdentifier` of an `UIButton` or `TEEUIScrollViewObservable`. Than, when you register detil page with `registerChallengesFor(detailPageId:, view:)`, challenges will be attached, and fired automatically when interacting with the element.
 
 For triggering scroll challenge, TEEUIScrollViewObservable subclass is required
 ```swift
