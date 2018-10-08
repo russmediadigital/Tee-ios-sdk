@@ -1,6 +1,10 @@
 # Russmedia Tee iOS
 iOS SDK for Russmedia Engagement Engine
 
+### Requirements
+
+iOS Deployment Target of iOS framework is 9.0
+
 ### Take it on board
 
 Use downloaded framework as embedded binary for your project. Cocoapods are coming soon.
@@ -91,7 +95,7 @@ Each View is registrered for own challanges under unique string `detailPageId` a
 TEE.instance.registerChallengesFor(detailPageId: "uniqueViewID", view: self.view)
 ```
 
-Than, particular challenges can be triggered by hand, using ID of element, with call:
+Than, particular challenges can be triggered in code, using ID of challenge, with call:
 
 ```swift
 TEE.instance.fireChallenge(withElementId: ".article-detail.selected .share.facebook")
@@ -99,9 +103,9 @@ TEE.instance.fireChallenge(withElementId: ".article-detail.selected .share.faceb
 
 ### Attaching and fireing via IB
 
- You can attach challenge code as `accessibilityIdentifier` to an UIButton or `TEEUIScrollViewObservable`*, so when registering detil page with `registerChallengesFor(detailPageId:, view:)`, challenge will be attached, and fired automatically when interacting with the element.
+You can set ID of challenge as `accessibilityIdentifier` of an UIButton or `TEEUIScrollViewObservable`. Than, when you register detil page with `registerChallengesFor(detailPageId:, view:)`, challenges will be attached, and fired automatically when interacting with the element.
 
-* for triggering scroll challenge, this ScrollView class is needed
+For triggering scroll challenge, TEEUIScrollViewObservable subclass is required
 ```swift
 @IBOutlet weak var scrollView: TEEUIScrollViewObservable!
 ```
@@ -113,10 +117,6 @@ TEE.instance.resignViewForChallenges(withKey: "uniqueViewID")
 ```
 
 ### User activity indication
-
-```swift
-@IBOutlet weak var scrollView: TEEUIScrollViewObservable!
-```
 
 Engagement Engine measures also user activity in general. The best to set `activityPing()` call is UIApplicationDelegate methods.
 
@@ -130,9 +130,9 @@ func applicationDidBecomeActive(_ application: UIApplication) {
 }
 ```
 
-### Info.plist requirements and optional settings
+### Info.plist requirements and optional properties
 
-Engagement Engine is looking for two mandatory strings under `TEE` dictionary, that shoud be provided in `Info.plist` file. TEE/ApiToken and TEE/liveSocketEndpoint
+Engagement Engine is looking for two mandatory strings under `TEE` dictionary, that shoud be provided in `Info.plist`. TEE/ApiToken and TEE/liveSocketEndpoint
 
 - TEE (Dictionary)
   - ApiToken (String)
