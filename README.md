@@ -11,7 +11,7 @@ import TeeSDK
 
 ### Enabling the debug mode
 
-Debug mode is needs to enabled by setting static property before first call of `TEE.instance`. Debug mode enables UISwitch in left bottom corner of the screen, which opens console with all TEE traffic. Console screens also offers the button to switch socket endpoints, if some debug endpoints are provided in Info.plist. See Info.plist requitrements lower. Default value is `false`
+Debug mode needs to be enabled by setting static property before first call of `TEE.instance` is made. Debug mode enables UISwitch in left bottom corner of the screen, which opens console with all TEE traffic. Console screens also offers the button to switch socket endpoints. When endpoint is changed, app restart is needed. Endpoint is changeable just when any debug endpoints are provided in Info.plist. See Info.plist requirements lower. Default value is `false`
 
 ```swift
 TEE.IS_DEV = true
@@ -82,7 +82,7 @@ To enable challenges for each part of app, you call register method for every sc
 Each View is registrered for own challanges under unique string `detailPageId` and provides reference to root UIView of the screen.
 
 ```swift
-TEE.instance.registerChallengesFor(detailPageId: "uniqueID", view: self.view)
+TEE.instance.registerChallengesFor(detailPageId: "uniqueViewID", view: self.view)
 ```
 
 Than, particular challenges can be triggered by hand, using ID of element, with call:
@@ -100,7 +100,17 @@ TEE.instance.fireChallenge(withElementId: ".article-detail.selected .share.faceb
 @IBOutlet weak var scrollView: TEEUIScrollViewObservable!
 ```
 
+### Detach challenges from view 
+
+```swift
+TEE.instance.resignViewForChallenges(withKey: "uniqueViewID")
+```
+
 ### User activity indication
+
+```swift
+@IBOutlet weak var scrollView: TEEUIScrollViewObservable!
+```
 
 Engagement Engine measures also user activity in general. The best to set `activityPing()` call is UIApplicationDelegate methods.
 
@@ -114,7 +124,18 @@ func applicationDidBecomeActive(_ application: UIApplication) {
 }
 ```
 
-### Sample usage
+### Info.plist requirements and optional settings
+
+Engagement Engine is looking for two mandatory strings under `TEE` dictionary, that shoud be provided in `Info.plist` file. TEE/ApiToken and TEE/liveSocketEndpoint
+
+- TEE (Dictionary)
+  - ApiToken (String)
+  - liveSocketEndpoint (String)
+  - devSocketEndpoint1 (String) // optional
+  - devSocketEndpointXY (String) // optional
+  - themeColorHex (String) // optional
+
+### Sample implementation
 
 ```swift
 @UIApplicationMain
@@ -160,14 +181,13 @@ import TeeSDK
 class DetailViewController: UIViewController {
 
  @IBOutlet weak var scrollView: TEEUIScrollViewObservable!
- @IBOutlet weak var content: UILabel!
 	
- var pageKey: "productNr123"
+ let pageKey: "productDetail123"
 	
  override func viewDidLoad() {
   super.viewDidLoad()
 		
-  // Asociating scrollview with expecting challenge code
+  // Associating scrollview with expecting challenge code
   scrollView.accessibilityIdentifier = ".article-detail.selected .article.scroll"
 		
   TEE.instance.registerChallengesFor(detailPageId: pageKey, view: self.view)
