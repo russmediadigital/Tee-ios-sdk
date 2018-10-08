@@ -3,7 +3,7 @@ iOS SDK for Russmedia Engagement Engine
 
 ### Take it on board
 
-Use downloaded framework as embedded binary for your project. Cocoapods are comming soon.
+Use downloaded framework as embedded binary for your project. Cocoapods are coming soon.
 
 ![embedded](https://github.com/russmedia/Tee-ios-sdk/blob/master/readme_img/embedded.png)
 
