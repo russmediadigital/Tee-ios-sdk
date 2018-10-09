@@ -192,7 +192,7 @@ class DetailViewController: UIViewController {
  override func viewDidLoad() {
   super.viewDidLoad()
 		
-  // Associating scrollview with expecting challenge code
+  // Associating scrollview with expected challenge code
   scrollView.accessibilityIdentifier = ".article-detail.selected .article.scroll"
 		
   TEE.instance.registerChallengesFor(detailPageId: pageKey, view: self.view)
