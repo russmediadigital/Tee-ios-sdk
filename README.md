@@ -86,7 +86,7 @@ Logout method will cancel session with given user and will get anonymous token t
 TEE.instance.logout()
 ```
 
-### Attaching and fireing challanges in code
+### Attaching and firing challanges in code
 
 To enable challenges for each part of app, you call register method for every screen, that should hold elements to trigger challenges.
 Each View is registrered for own challanges under unique string `detailPageId` and provides reference to root UIView of the screen.
@@ -101,9 +101,9 @@ Than, particular challenges can be triggered in code, using ID of challenge, wit
 TEE.instance.fireChallenge(withElementId: ".article-detail.selected .share.facebook")
 ```
 
-### Attaching and fireing via IB
+### Attaching and firing via IB
 
-You can set ID of challenge as `accessibilityIdentifier` of an `UIButton` or `TEEUIScrollViewObservable`. Than, when you register detil page with `registerChallengesFor(detailPageId:, view:)`, challenges will be attached, and fired automatically when interacting with the element.
+You can set ID of challenge as `accessibilityIdentifier` of an `UIButton` or `TEEUIScrollViewObservable`. Than, when you register detail page with `registerChallengesFor(detailPageId:, view:)`, challenges will be attached, and fired automatically when interacting with the element.
 
 For triggering scroll challenge, TEEUIScrollViewObservable subclass is required
 ```swift
