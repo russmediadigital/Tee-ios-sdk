@@ -1,5 +1,5 @@
 # Russmedia Tee iOS
-iOS SDK for Russmedia Engagement Engine v0.5.1
+iOS SDK for Russmedia Engagement Engine v 0.5.1
 
 ### Requirements
 
@@ -7,7 +7,17 @@ iOS Deployment Target 9.0
 
 ### Take it on board
 
-Use downloaded framework as embedded binary for your project. Cocoapods are coming soon.
+#### Cocoapods
+
+Check out [Get Started](http://cocoapods.org/) tab on [cocoapods.org](http://cocoapods.org/). Than use following spec.
+
+```ruby
+pod 'TeeSDK', :podspec => 'https://raw.github.com/russmedia/Tee-ios-sdk/master/TeeSDK.podspec'
+```
+
+#### Embedded
+
+Or use downloaded framework as embedded binary for your project.
 
 ![embedded](https://github.com/russmedia/Tee-ios-sdk/blob/master/readme_img/embedded.png)
 
