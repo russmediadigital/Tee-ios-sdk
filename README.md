@@ -19,7 +19,7 @@ pod 'TeeSDK', :podspec => 'https://raw.github.com/russmedia/Tee-ios-sdk/master/T
 
 Or use downloaded framework as embedded binary for your project.
 
-![embedded](https://github.com/russmedia/Tee-ios-sdk/blob/master/readme_img/embedded.png)
+![embedded](https://github.com/russmedia/Tee-ios-sdk/blob/master/readme_img/embedded.jpg)
 
 ### Make it run
 
