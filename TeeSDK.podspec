@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TeeSDK"
-  s.version      = "0.5.1"
+  s.version      = "0.5.2"
   s.summary      = "Russmedia Engagement Engine SDK for iOS"
   s.homepage     = "https://github.com/russmedia/Tee-ios-sdk"
   s.description  = <<-DESC

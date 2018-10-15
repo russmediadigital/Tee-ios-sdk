@@ -1,5 +1,5 @@
 # Russmedia Tee iOS
-iOS SDK for Russmedia Engagement Engine v 0.5.1
+iOS SDK for Russmedia Engagement Engine v 0.5.2
 
 ### Requirements
 
