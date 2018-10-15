@@ -12,7 +12,7 @@ iOS Deployment Target 9.0
 Check out [Get Started](http://cocoapods.org/) tab on [cocoapods.org](http://cocoapods.org/). Than use following spec.
 
 ```ruby
-pod 'TeeSDK', :podspec => 'https://raw.github.com/russmedia/Tee-ios-sdk/master/TeeSDK.podspec'
+pod 'TeeSDK', :git => 'https://github.com/russmedia/Tee-ios-sdk.git', :branch => 'master'
 ```
 
 #### Embedded
