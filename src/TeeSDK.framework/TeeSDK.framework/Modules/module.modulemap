@@ -1,0 +1,4 @@
+framework module TeeSDK {
+  header "TeeSDK-Swift.h"
+  requires objc
+}
