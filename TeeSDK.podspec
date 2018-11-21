@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TeeSDK"
-  s.version      = "0.5.6"
+  s.version      = "0.5.7"
   s.summary      = "Russmedia Engagement Engine SDK for iOS"
   s.homepage     = "https://github.com/russmedia/Tee-ios-sdk"
   s.description  = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   }
 
   s.author       = {'Russmedia Digital GmbH' => 'michal.senk@russmedia.com'}
-  s.source       = {:git => "https://github.com/russmedia/Tee-ios-sdk.git", :tag => s.version }
+  s.source       = {:git => "https://github.com/russmedia/Tee-ios-sdk.git", :branch => "master" }
   s.platform     = :ios, '9.0'
 
   s.ios.vendored_frameworks = 'src/TeeSDK.framework'
