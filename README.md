@@ -71,7 +71,7 @@ TEE.instance.executeAfterInitialized {
 
 ### executeAfterNotAnonymous
 
-Method, takes block, that is executed right when TEE has known, logged-in user. And as second parameter, takes expiration of block, that can invalidate execution after some time. Typically, since user is logged in, you may want to adapt his app UI.
+Method takes block, that is executed right when TEE has known, logged-in user. And as second parameter, takes expiration of block, that can invalidate execution after some time. Typically, since user is logged in, you may want to adapt his app UI.
 
 ```swift
 TEE.instance.executeAfterNotAnonymous {
@@ -81,7 +81,7 @@ TEE.instance.executeAfterNotAnonymous {
 
 ### handlePushRegistration
 
-You may want to notify users, with targeting based on TEE profile. You can associate push notification token with specific user..
+You may want to notify users, with targeting based on TEE profile. You can associate push notification token with specific user.
 
 ```swift
 func application( _ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data ) {
