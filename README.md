@@ -1,5 +1,5 @@
 # Russmedia Tee iOS
-iOS SDK for Russmedia Engagement Engine v 1.0.8
+iOS SDK for Russmedia Engagement Engine v 1.0.7
 
 ### Requirements
 
@@ -57,6 +57,44 @@ Called, when any message arrives. `onCall` and `onMessageReceived` may be a good
 TEE.instance.onMessageReceived = { message in
  print("Tee is getting message")
 }
+```
+
+### executeAfterInitialized
+
+Method, that enques blocks, which are fired since TEE has initialised. Typically, wait with execution of relevant deeplinks, until any collector token is already received.
+
+```swift
+TEE.instance.executeAfterInitialized {
+ print("Anonymous or logged-in user is active")
+}
+```
+
+### executeAfterNotAnonymous
+
+Method, takes block, that is executed right when TEE has known, logged-in user. And as second parameter, takes expiration of block, that can invalidate execution after some time. Typically, since user is logged in, you may want to adapt his app UI.
+
+```swift
+TEE.instance.executeAfterNotAnonymous {
+ print("User is finally logged in")
+}
+```
+
+### handlePushRegistration
+
+You may want to notify users, with targeting based on TEE profile. You can associate push notification token with specific user..
+
+```swift
+func application( _ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data ) {
+ TEE.instance.handlePushRegistration(deviceToken: deviceToken)
+}
+```
+
+### isAnonymous
+
+Readonly Bool for getting info, if currently running session is anonymous, or with logged-in user.
+
+```swift
+TEE.instance.isAnonymous
 ```
 
 ### verbosePrint
