@@ -1,5 +1,5 @@
 # Russmedia Tee iOS
-iOS SDK for Russmedia Engagement Engine v 1.0.7
+iOS SDK for Russmedia Engagement Engine v 1.0.8
 
 ### Requirements
 
@@ -103,6 +103,14 @@ Talky log of communication with socket server in console. Default value is `fals
 
 ```swift
 TEE.instance.verbosePrint = true
+```
+
+### Default language for UI.
+
+Alpha-2 language code, ISO 639-1. Default value is `de`.
+
+```swift
+TEE.LANG = "de"
 ```
 
 ### presentingViewController
