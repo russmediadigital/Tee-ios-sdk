@@ -1,5 +1,5 @@
 # Russmedia Tee iOS
-iOS SDK for Russmedia Engagement Engine v 1.0.8
+iOS SDK for Russmedia Engagement Engine v 1.0.9
 
 ### Requirements
 
@@ -28,14 +28,14 @@ First thing is, to import the framework.
 ```swift
 import TeeSDK
 ```
-
-### Enabling the debug mode
-
-Debug mode needs to be enabled by setting static property before first call of `TEE.instance` is made. Debug mode enables UISwitch in left bottom corner of the screen, which opens console with all TEE traffic. Console screens also offers the button to switch socket endpoints. When endpoint is changed, app restart is needed. Endpoint is changeable just when any debug endpoints are provided in Info.plist. See Info.plist requirements lower. Default value is `false`
-
-```swift
-TEE.IS_DEV = true
-```
+<!---->
+<!--### Enabling the debug mode-->
+<!---->
+<!--Debug mode needs to be enabled by setting static property before first call of `TEE.instance` is made. Debug mode enables UISwitch in left bottom corner of the screen, which opens console with all TEE traffic. Console screens also offers the button to switch socket endpoints. When endpoint is changed, app restart is needed. Endpoint is changeable just when any debug endpoints are provided in Info.plist. See Info.plist requirements lower. Default value is `false`-->
+<!---->
+<!--```swift-->
+<!--TEE.IS_DEV = true-->
+<!--```-->
 
 Once imported, you can access singleton instance of the framework and implement some delegates methods and properties.
 
@@ -103,14 +103,6 @@ Talky log of communication with socket server in console. Default value is `fals
 
 ```swift
 TEE.instance.verbosePrint = true
-```
-
-### Default language for UI.
-
-Alpha-2 language code, ISO 639-1. Default value is `de`.
-
-```swift
-TEE.LANG = "de"
 ```
 
 ### presentingViewController
@@ -184,6 +176,14 @@ func applicationDidEnterBackground(_ application: UIApplication) {
 func applicationDidBecomeActive(_ application: UIApplication) {
  TEE.instance.activityPing()
 }
+```
+
+### Switch the language
+
+You can call method `updateLanguage(lang: String)` on running session, to switch language of TEE UI for currently active collector token. Either anonymous or already paired one with user.  As a parameter, is expected Alpha-2 language code, ISO 639-1.
+
+```swift
+TEE.instance.updateLanguage(lang: "de")
 ```
 
 ### Info.plist requirements and optional properties
