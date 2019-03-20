@@ -122,10 +122,10 @@ Activity will be tracked and saved under new generic collector token.
 TEE.instance.initConnection()
 ```
 
-Whenever you determinate, that user is not anonymous anymore, you call init method again, with user identificator as parameter.
+Whenever you determinate, that user is not anonymous anymore, you call init method again, with remoteId and userName as parameters. RemoteId should represent unique identificator of the user and userName, as optional parameter, as human readable string as display name.
 
 ```swift
-TEE.instance.initConnection(userID: "bruce.wayne@gothamail.com")
+TEE.instance.initConnection(remoteId: "bruce.wayne@gothamail.com", userName: "BMan")
 ```
 
 Logout method will cancel session with given user and will get anonymous token to starts with points from 0.
