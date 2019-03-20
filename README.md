@@ -1,5 +1,5 @@
 # Russmedia Tee iOS
-iOS SDK for Russmedia Engagement Engine v 1.0.9
+iOS SDK for Russmedia Engagement Engine v 1.0.10
 
 ### Requirements
 
@@ -184,6 +184,18 @@ You can call method `updateLanguage(lang: String)` on running session, to switch
 
 ```swift
 TEE.instance.updateLanguage(lang: "de")
+```
+
+### Format number of points in TEEPointsView
+
+Use method `setPointsFormatter(_ formatter: NumberFormatter)` to pass number formatter, that is applied to every TEEPointsView in app while displaying current points.
+
+```swift
+let formatter = NumberFormatter()
+formatter.groupingSeparator = "."
+formatter.numberStyle = .decimal
+
+TEE.instance.setPointsFormatter(formatter)
 ```
 
 ### Info.plist requirements and optional properties
