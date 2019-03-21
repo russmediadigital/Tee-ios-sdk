@@ -1,5 +1,5 @@
 # Russmedia Tee iOS
-iOS SDK for Russmedia Engagement Engine v 1.0.10
+iOS SDK for Russmedia Engagement Engine v 1.0.11
 
 ### Requirements
 
@@ -208,6 +208,7 @@ Engagement Engine is looking for two mandatory strings under `TEE` dictionary, t
   - devSocketEndpoint1 (String) // optional socket endpoint, selectable in debug console
   - devSocketEndpointXY (String) // optional socket endpoint, selectable in debug console
   - themeColorHex (String) // optional
+  - pointsFontColorHex (String) // optional
 
 ### Sample implementation
 
