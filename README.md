@@ -203,12 +203,12 @@ TEE.instance.setPointsFormatter(formatter)
 For opening TEE overview page on specific position you can use `handleDeepLink(_ link: String)` where link includes parameters for relevant section. Link needs to follow pattern that says, that target page is TEE webview, and specify the entry point `...webview?entry=...`. Method uses regular expression to harvest entry point, so even whole url can be inserted. Example strings, you can pass:
 
 - scheme://your.app/open-tee/`webview?entry=/me/rewards`
-- https://yourwebsite/open-gamification/`webview?entry=/me/challenges`
-- https://yourwebsite/open-gamification/`webview?entry=/me/overview`
-- https://yourwebsite/open-gamification/`webview?entry=/me/challenges`
-- https://yourwebsite/open-gamification/`webview?entry=/me/rewards`
-- https://yourwebsite/open-gamification/`webview?entry=/me/rewards/detail/123`
-- https://yourwebsite/open-gamification/`webview?entry=/me/posts/123`
+- ...ttps://yourwebsite/open-gamification/`webview?entry=/me/challenges`
+- ...ttps://yourwebsite/open-gamification/`webview?entry=/me/overview`
+- ...ttps://yourwebsite/open-gamification/`webview?entry=/me/challenges`
+- ...ttps://yourwebsite/open-gamification/`webview?entry=/me/rewards`
+- ...ttps://yourwebsite/open-gamification/`webview?entry=/me/rewards/detail/123`
+- ...ttps://yourwebsite/open-gamification/`webview?entry=/me/posts/123`
 
 ### Executing code, after user is successfuly logged in TEE.
 
