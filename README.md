@@ -202,13 +202,13 @@ TEE.instance.setPointsFormatter(formatter)
 
 For opening TEE overview page on specific position you can use `handleDeepLink(_ link: String)` where link includes parameters for relevant section. Link needs to follow pattern that says, that target page is TEE webview, and specify the entry point `...webview?entry=...`. Method uses regular expression to harvest entry point, so even whole url can be inserted. Example strings, you can pass:
 
-scheme://your.app/open-tee/`webview?entry=/me/rewards`
-https://yourwebsite/open-gamification/`webview?entry=/me/challenges`
-https://yourwebsite/open-gamification/`webview?entry=/me/overview`
-https://yourwebsite/open-gamification/`webview?entry=/me/challenges`
-https://yourwebsite/open-gamification/`webview?entry=/me/rewards`
-https://yourwebsite/open-gamification/`webview?entry=/me/rewards/detail/123`
-https://yourwebsite/open-gamification/`webview?entry=/me/posts/123`
+- scheme://your.app/open-tee/`webview?entry=/me/rewards`
+- https://yourwebsite/open-gamification/`webview?entry=/me/challenges`
+- https://yourwebsite/open-gamification/`webview?entry=/me/overview`
+- https://yourwebsite/open-gamification/`webview?entry=/me/challenges`
+- https://yourwebsite/open-gamification/`webview?entry=/me/rewards`
+- https://yourwebsite/open-gamification/`webview?entry=/me/rewards/detail/123`
+- https://yourwebsite/open-gamification/`webview?entry=/me/posts/123`
 
 ### Executing code, after user is successfuly logged in TEE.
 
@@ -223,7 +223,7 @@ func application(_ application: UIApplication, continue userActivity: NSUserActi
   case NSUserActivityTypeBrowsingWeb:
    let url = userActivity.webpageURL!
    
-   if userIsLoggedIn {
+   if userIsLoggedIn {  // your getter
    	TEE.instance.handleDeepLink(url.absoluteString)
    } else {
     loginUser({ isSuccess in // your async login process
@@ -231,7 +231,7 @@ func application(_ application: UIApplication, continue userActivity: NSUserActi
       TEE.instance.executeAfterNotAnonymous({
        TEE.instance.handleDeepLink(url.absoluteString)
       }, cancelAfter: 5)
-	 }
+     }
     })
    }
    
