@@ -210,7 +210,7 @@ For opening TEE overview page on specific position you can use `handleDeepLink(_
 - ...ttps://yourwebsite/open-gamification/`webview?entry=/me/rewards/detail/123`
 - ...ttps://yourwebsite/open-gamification/`webview?entry=/me/posts/123`
 
-### Executing code, after user is successfuly logged in TEE.
+### Executing code, after user is successfully logged in TEE.
 
 Method `executeAfterNotAnonymous(_ block: @escaping () -> Void, cancelAfter interval: TimeInterval = 0)` allows you to register block, that is fired, right when user is not anonymous anymore. If it won't be desired, to fire block after specific time frame, you can pass expiration time interval, timer will be invalidated and block released. In case of deep linking, you may want to check, if user is not anonymous. Anonymous user has limited content in TEE overview pages and it's beneficial to suggest login dialog first. 
 
