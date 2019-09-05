@@ -1,9 +1,9 @@
 # Russmedia Tee iOS
-iOS SDK for Russmedia Engagement Engine v 1.1.2
+iOS SDK for Russmedia Engagement Engine v 1.1.3
 
 ### Requirements
 
-iOS Deployment Target 9.0, SWIFT 5.0
+iOS Deployment Target 9.0, SWIFT 4.2
 
 ### Take it on board
 
@@ -14,12 +14,12 @@ Check out [Get Started](http://cocoapods.org/) tab on [cocoapods.org](http://coc
 ```ruby
 pod 'TeeSDK', :git => 'https://github.com/russmedia/Tee-ios-sdk.git', :branch => 'master'
 ```
-
-For SWIFT 3.0
-
-```ruby
-pod 'TeeSDK', :git => 'https://github.com/russmedia/Tee-ios-sdk.git', :branch => 'swift-3.0'
-```
+<!---->
+<!--For SWIFT 3.0-->
+<!---->
+<!--```ruby-->
+<!--pod 'TeeSDK', :git => 'https://github.com/russmedia/Tee-ios-sdk.git', :branch => 'swift-3.0'-->
+<!--```-->
 
 #### Embedded
 
@@ -92,6 +92,16 @@ You may want to notify users, with targeting based on TEE profile. You can assoc
 ```swift
 func application( _ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data ) {
  TEE.instance.handlePushRegistration(deviceToken: deviceToken)
+}
+```
+
+### Catching users point milestones
+
+You can catch users points progress via callbacks for any amount of points you need.
+
+```swift
+TEE.instance.addMilestone(forPointsCount: 10) {
+ print("Another 10 points reached")
 }
 ```
 
