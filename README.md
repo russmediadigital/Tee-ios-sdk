@@ -14,6 +14,10 @@ Check out [Get Started](http://cocoapods.org/) tab on [cocoapods.org](http://coc
 ```ruby
 pod 'TeeSDK', :git => 'https://github.com/russmedia/Tee-ios-sdk.git', :branch => 'master'
 ```
+or
+```ruby
+pod 'TeeSDK', :git => 'https://github.com/russmedia/Tee-ios-sdk.git', :branch => 'ios13-sdk'
+```
 <!---->
 <!--For SWIFT 3.0-->
 <!---->
