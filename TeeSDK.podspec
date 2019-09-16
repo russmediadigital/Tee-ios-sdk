@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   }
 
   s.author       = {'Russmedia Digital GmbH' => 'michal.senk@russmedia.com'}
-  s.source       = {:git => "https://github.com/russmedia/Tee-ios-sdk.git", :branch => "master" }
+  s.source       = {:git => "https://github.com/russmedia/Tee-ios-sdk.git", :branch => "ios13-sdk" }
   s.platform     = :ios, '9.0'
 
   s.ios.vendored_frameworks = 'src/TeeSDK.framework'
