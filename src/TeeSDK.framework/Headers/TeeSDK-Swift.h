@@ -185,7 +185,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreGraphics;
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
+@import WebKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -206,6 +208,24 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
+SWIFT_CLASS("_TtC6TeeSDK3TEE")
+@interface TEE : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+
+
+
+@class WKUserContentController;
+@class WKScriptMessage;
+
+@interface TEE (SWIFT_EXTENSION(TeeSDK)) <WKScriptMessageHandler>
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
 
 @class NSCoder;
 
@@ -420,7 +440,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreGraphics;
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
+@import WebKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -441,6 +463,24 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
+SWIFT_CLASS("_TtC6TeeSDK3TEE")
+@interface TEE : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+
+
+
+@class WKUserContentController;
+@class WKScriptMessage;
+
+@interface TEE (SWIFT_EXTENSION(TeeSDK)) <WKScriptMessageHandler>
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
 
 @class NSCoder;
 
