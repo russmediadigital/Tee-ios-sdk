@@ -1,4 +1,3 @@
-
 let touchEvent = "touchstart";
 let teeElems = document.getElementsByClassName("tee-element");
 for(var i = 0; i < teeElems.length; i++) {

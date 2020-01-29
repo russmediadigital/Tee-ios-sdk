@@ -1,5 +1,5 @@
 # Russmedia Tee iOS
-iOS SDK for Russmedia Engagement Engine v 1.1.10
+iOS SDK for Russmedia Engagement Engine v 1.2.0
 
 ### Requirements
 
@@ -88,10 +88,11 @@ TEE.instance.executeAfterNotAnonymous {
 ### handlePushRegistration
 
 You may want to notify users, with targeting based on TEE profile. You can associate push notification token with specific user.
+As additional, optional parameter, `pushAlias` you can pass specific string value, associated with token.
 
 ```swift
 func application( _ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data ) {
- TEE.instance.handlePushRegistration(deviceToken: deviceToken)
+ TEE.instance.handlePushRegistration(deviceToken: deviceToken, pushAlias: "aliasString")
 }
 ```
 
