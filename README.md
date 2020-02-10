@@ -217,7 +217,7 @@ TEE.instance.setPointsFormatter(formatter)
 
 ### Own transition for displaying overview window
 
-Use new public API:  `modalPresentationStyle: UIModalPresentationStyle?` and `presentationTransitioningDelegate: UIViewControllerTransitioningDelegate?` on TEE instance, to specify your own transition to open overview pagine in app.
+Use new public API:  `modalPresentationStyle: UIModalPresentationStyle?` and `presentationTransitioningDelegate: UIViewControllerTransitioningDelegate?` on TEE instance, to specify your own transition to open overview page in app.
 
 ```swift
 TEE.instance.modalPresentationStyle = .custom
