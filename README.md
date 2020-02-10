@@ -1,5 +1,5 @@
 # Russmedia Tee iOS
-iOS SDK for Russmedia Engagement Engine v 1.2.0
+iOS SDK for Russmedia Engagement Engine v 1.2.1
 
 ### Requirements
 
@@ -213,6 +213,15 @@ formatter.groupingSeparator = "."
 formatter.numberStyle = .decimal
 
 TEE.instance.setPointsFormatter(formatter)
+```
+
+### Own transition for displaying overview window
+
+Use new public API:  `modalPresentationStyle: UIModalPresentationStyle?` and `presentationTransitioningDelegate: UIViewControllerTransitioningDelegate?` on TEE instance, to specify your own transition to open overview pagine in app.
+
+```swift
+TEE.instance.modalPresentationStyle = .custom
+TEE.instance.presentationTransitioningDelegate = MyTransitioningDelegate()
 ```
 
 ### Open overview page with deeplink
