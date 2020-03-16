@@ -1,5 +1,5 @@
 # Russmedia Tee iOS
-iOS SDK for Russmedia Engagement Engine v 1.1.3
+iOS SDK for Russmedia Engagement Engine v 1.2.2
 
 ### Requirements
 
@@ -92,10 +92,11 @@ TEE.instance.executeAfterNotAnonymous {
 ### handlePushRegistration
 
 You may want to notify users, with targeting based on TEE profile. You can associate push notification token with specific user.
+As additional, optional parameter, `pushAlias` you can pass specific string value, associated with token.
 
 ```swift
 func application( _ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data ) {
- TEE.instance.handlePushRegistration(deviceToken: deviceToken)
+ TEE.instance.handlePushRegistration(deviceToken: deviceToken, pushAlias: "aliasString")
 }
 ```
 
@@ -218,6 +219,15 @@ formatter.numberStyle = .decimal
 TEE.instance.setPointsFormatter(formatter)
 ```
 
+### Own transition for displaying overview window
+
+Use new public API:  `modalPresentationStyle: UIModalPresentationStyle?` and `presentationTransitioningDelegate: UIViewControllerTransitioningDelegate?` on TEE instance, to specify your own transition to open overview page in app.
+
+```swift
+TEE.instance.modalPresentationStyle = .custom
+TEE.instance.presentationTransitioningDelegate = MyTransitioningDelegate()
+```
+
 ### Open overview page with deeplink
 
 For opening TEE overview page on specific position you can use `handleDeepLink(_ link: String)` where link includes parameters for relevant section. Link needs to follow pattern that says, that target page is TEE webview, and specify the entry point `...webview?entry=...`. Method uses regular expression to harvest entry point, so even whole url can be inserted. Example strings, you can pass:
@@ -229,6 +239,32 @@ For opening TEE overview page on specific position you can use `handleDeepLink(_
 - ...ttps://yourwebsite/open-gamification/`webview?entry=/me/rewards`
 - ...ttps://yourwebsite/open-gamification/`webview?entry=/me/rewards/detail/123`
 - ...ttps://yourwebsite/open-gamification/`webview?entry=/me/posts/123`
+
+### Open Overview page with deeplink from HTML of your WKWebview
+
+For opening TEE overview page from WKWebview, with specific deeplink, you register it's WKUserContentController by `TEE.instance.registerWKUserContentControllerForDeeplinks(controller: userController)` and set javascript listeners in webview, after DOM is loaded, by `TEE.instance.registerHTMLForDeeplinks(webview: webView)`.
+
+```swift
+private func initWebView() {
+ let userController = WKUserContentController()
+ let config = WKWebViewConfiguration() 
+ config.userContentController = userController
+ webView = WKWebView(frame: .zero, configuration: config)
+ TEE.instance.registerWKUserContentControllerForDeeplinks(controller: userController)
+}
+
+func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+	TEE.instance.registerHTMLForDeeplinks(webview: webView)
+}
+```
+
+In HTML, you add class `tee-element` to identify TEE related element, which is automatically displayed as block, if TEE is present. Then class `tee-open-btn` to open TEE overview popup on click and attribute `data-open` to pass deeplink string to open. 
+
+```html
+<div class="tee-open-btn tee-element" style="display: none" data-open="/me/rewards/detail/123">
+ My HTML link to page with reward ID 123
+</div>
+```
 
 ### Executing code, after user is successfully logged in TEE.
 
