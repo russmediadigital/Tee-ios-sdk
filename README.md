@@ -14,18 +14,16 @@ Check out [Get Started](http://cocoapods.org/) tab on [cocoapods.org](http://coc
 ```ruby
 pod 'TeeSDK', :git => 'https://github.com/russmedia/Tee-ios-sdk.git', :branch => 'master'
 ```
-<!---->
-<!--For SWIFT 3.0-->
-<!---->
-<!--```ruby-->
-<!--pod 'TeeSDK', :git => 'https://github.com/russmedia/Tee-ios-sdk.git', :branch => 'swift-3.0'-->
-<!--```-->
 
 #### Embedded
 
 Or use downloaded framework as embedded binary for your project.
 
 ![embedded](https://github.com/russmedia/Tee-ios-sdk/blob/master/readme_img/embedded.jpg)
+
+### Camera permission
+
+Framework uses native Camera for QR Code reader, so `Info.plist` of your app needs to provide static messages to display to the user when the system asks for camera or microphone permission: `NSCameraUsageDescription` and `NSMicrophoneUsageDescription`.
 
 ### Make it run
 
@@ -34,14 +32,6 @@ First thing is, to import the framework.
 ```swift
 import TeeSDK
 ```
-<!---->
-<!--### Enabling the debug mode-->
-<!---->
-<!--Debug mode needs to be enabled by setting static property before first call of `TEE.instance` is made. Debug mode enables UISwitch in left bottom corner of the screen, which opens console with all TEE traffic. Console screens also offers the button to switch socket endpoints. When endpoint is changed, app restart is needed. Endpoint is changeable just when any debug endpoints are provided in Info.plist. See Info.plist requirements lower. Default value is `false`-->
-<!---->
-<!--```swift-->
-<!--TEE.IS_DEV = true-->
-<!--```-->
 
 Once imported, you can access singleton instance of the framework and implement some delegates methods and properties.
 
@@ -226,15 +216,16 @@ TEE.instance.presentationTransitioningDelegate = MyTransitioningDelegate()
 
 ### Open overview page with deeplink
 
-For opening TEE overview page on specific position you can use `handleDeepLink(_ link: String)` where link includes parameters for relevant section. Link needs to follow pattern that says, that target page is TEE webview, and specify the entry point `...webview?entry=...`. Method uses regular expression to harvest entry point, so even whole url can be inserted. Example strings, you can pass:
+For opening TEE overview page on specific position, you can use public API: `handleDeepLink(_ url: URL)`, where URL includes GET parameter for navigating to relevant section. Method uses regular expression to harvest entry point from `?entry=` GET parameter. So valid URL object with specified entry string as GET parameter, should be inserted. Example URLs, you can pass:
 
-- scheme://your.app/open-tee/`webview?entry=/me/rewards`
-- ...ttps://yourwebsite/open-gamification/`webview?entry=/me/challenges`
-- ...ttps://yourwebsite/open-gamification/`webview?entry=/me/overview`
-- ...ttps://yourwebsite/open-gamification/`webview?entry=/me/challenges`
-- ...ttps://yourwebsite/open-gamification/`webview?entry=/me/rewards`
-- ...ttps://yourwebsite/open-gamification/`webview?entry=/me/rewards/detail/123`
-- ...ttps://yourwebsite/open-gamification/`webview?entry=/me/posts/123`
+- ...ttps://yourwebsite/open-gamification`?entry=/me/rewards`
+- ...ttps://yourwebsite/open-gamification`?entry=/me/challenges`
+- ...ttps://yourwebsite/open-gamification`?entry=/me/overview`
+- scheme://your.app/whatever-text`?entry=/me/rewards`
+
+```swift
+TEE.instance.handleDeeplink(URL(string: "https://yourwebsite/open-gamification?entry=/me/rewards")!)
+```
 
 ### Open Overview page with deeplink from HTML of your WKWebview
 
