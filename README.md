@@ -1,9 +1,10 @@
+
 # Russmedia Tee iOS
-iOS SDK for Russmedia Engagement Engine v 1.2.6
+iOS SDK for Russmedia Engagement Engine v 1.2.7
 
 ### Requirements
 
-iOS Deployment Target 9.0, SWIFT 4.2
+iOS Deployment Target 9.0
 
 ### Take it on board
 
@@ -11,8 +12,16 @@ iOS Deployment Target 9.0, SWIFT 4.2
 
 Check out [Get Started](http://cocoapods.org/) tab on [cocoapods.org](http://cocoapods.org/). Than use following spec.
 
+For Swift version 5.2
+
 ```ruby
 pod 'TeeSDK', :git => 'https://github.com/russmedia/Tee-ios-sdk.git', :branch => 'master'
+```
+
+For Swift version 5.1.3
+
+```ruby
+pod 'TeeSDK', :git => 'https://github.com/russmedia/Tee-ios-sdk.git', :tag => 'swift_5.1.3'
 ```
 
 #### Embedded
@@ -241,7 +250,7 @@ private func initWebView() {
 }
 
 func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-	TEE.instance.registerHTMLForDeeplinks(webview: webView)
+  TEE.instance.registerHTMLForDeeplinks(webview: webView)
 }
 ```
 
@@ -267,7 +276,7 @@ func application(_ application: UIApplication, continue userActivity: NSUserActi
    let url = userActivity.webpageURL!
    
    if userIsLoggedIn {  // your getter
-   	TEE.instance.handleDeepLink(url.absoluteString)
+    TEE.instance.handleDeepLink(url.absoluteString)
    } else {
     loginUser({ isSuccess in // your async login process
      if isSuccess {
@@ -314,7 +323,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   TEE.instance.onMessageReceived = { message in
    print("Tee is getting message")
   }
-	
+  
   TEE.instance.verbosePrint = true
   TEE.instance.initConnection() // Anonymous init
   TEE.instance.presentingViewController = window?.rootViewController
@@ -339,22 +348,22 @@ import TeeSDK
 class DetailViewController: UIViewController {
 
  @IBOutlet weak var scrollView: TEEUIScrollViewObservable!
-	
+  
  let pageKey: "productDetail123"
-	
+  
  override func viewDidLoad() {
   super.viewDidLoad()
-		
+    
   // Associating scrollview with expected challenge code
   scrollView.accessibilityIdentifier = ".article-detail.selected .article.scroll"
-		
+    
   TEE.instance.registerChallengesFor(detailPageId: pageKey, view: self.view)
  }
-	
+  
  @IBAction func FBShareAction(_ sender: Any) {
   TEE.instance.fireChallenge(withElementId: ".article-detail.selected .share.facebook")
  }
-	
+  
  deinit {
   TEE.instance.resignViewForChallenges(withKey: pageKey)
  }
