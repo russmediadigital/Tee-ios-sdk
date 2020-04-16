@@ -1,10 +1,13 @@
 
+
 # Russmedia Tee iOS
 iOS SDK for Russmedia Engagement Engine v 1.2.7
 
 ### Requirements
 
-iOS Deployment Target 9.0
+iOS Deployment Target `9.0`, Swift `5.2`. 
+
+For lower Swift version 5.1.3, please checkout tag: `swift_5.1.3`
 
 ### Take it on board
 
