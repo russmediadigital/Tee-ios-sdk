@@ -15,6 +15,12 @@ For lower Swift version 5.1.3, please checkout tag: `swift_5.1.3`
 
 Check out [Get Started](http://cocoapods.org/) tab on [cocoapods.org](http://cocoapods.org/). Than use following spec.
 
+For Swift version 5.3
+
+```ruby
+pod 'TeeSDK', :git => 'https://github.com/russmedia/Tee-ios-sdk.git', :branch => 'swift_5.3'
+```
+
 For Swift version 5.2
 
 ```ruby
