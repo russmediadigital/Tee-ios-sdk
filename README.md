@@ -1,7 +1,7 @@
 
 
 # Russmedia Tee iOS
-iOS SDK for Russmedia Engagement Engine v 1.2.11
+iOS SDK for Russmedia Engagement Engine v 1.2.12
 
 ### Requirements
 
@@ -136,6 +136,30 @@ UIViewController, that is used for presenting overlayed modal views, for engagem
 
 ```swift
 TEE.instance.presentingViewController = window?.rootViewController
+```
+
+### popupCornerRadius
+
+Optional styling of TEE popup window.
+
+```swift
+TEE.instance.popupCornerRadius = 30
+```
+
+### popupStaticWidth
+
+Optional width of popup window, with absolut value.
+
+```swift
+TEE.instance.popupStaticWidth = 300 /// this is default value
+```
+
+### popupPercentWidth
+
+Optional width of popup window, relative to device screen width. Overrides `popupStaticWidth`.
+
+```swift
+TEE.instance.popupPercentWidth = 80
 ```
 
 ### Connection to server
