@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		nEc/rBm8EPEKt/qwYQC/vccT/t8=
+		qqHnCXXW89zxsXSI+TRXg1yxOwk=
 		</data>
 		<key>Headers/TeeSDK-Swift.h</key>
 		<data>
-		pxeZU8sWo4jZy+TROFMBt9VLGGs=
+		rapGGhl1gON7J1vyu4KToXGCpFc=
 		</data>
 		<key>Headers/Tee_iOS_SDK.h</key>
 		<data>
@@ -18,47 +18,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SXlq1NoK8jfwNZD9xhpFmhrmNSM=
+		LJKSXNWDzyv99aw213QcVY7IMCQ=
 		</data>
 		<key>Modules/TeeSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
-		3dro/dlhuFsxgKnv/JVcB1upj/w=
+		kj4pebHTk4WgzP0Yjm4Wsg45ArE=
 		</data>
 		<key>Modules/TeeSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		GgJgq3MF6oVcZAqEqHrjdg3v+0g=
+		WHZ9IWh/S2O8DMDnoP2BAYcwfD8=
 		</data>
 		<key>Modules/TeeSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		qHfz0RQRyM4dZfuymgx0z+fW0LA=
+		b2WSl7NyLR5Z2BGtwDbhwY1d8GA=
 		</data>
 		<key>Modules/TeeSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		933w4tPT2zto7nA05kYWSdnUwV4=
+		rgN4BUFybxz32R9F8JS+l26XGfM=
 		</data>
 		<key>Modules/TeeSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		qHfz0RQRyM4dZfuymgx0z+fW0LA=
+		b2WSl7NyLR5Z2BGtwDbhwY1d8GA=
 		</data>
 		<key>Modules/TeeSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		933w4tPT2zto7nA05kYWSdnUwV4=
+		rgN4BUFybxz32R9F8JS+l26XGfM=
 		</data>
 		<key>Modules/TeeSDK.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		3dro/dlhuFsxgKnv/JVcB1upj/w=
+		kj4pebHTk4WgzP0Yjm4Wsg45ArE=
 		</data>
 		<key>Modules/TeeSDK.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		GgJgq3MF6oVcZAqEqHrjdg3v+0g=
+		WHZ9IWh/S2O8DMDnoP2BAYcwfD8=
 		</data>
 		<key>Modules/TeeSDK.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		3dro/dlhuFsxgKnv/JVcB1upj/w=
+		kj4pebHTk4WgzP0Yjm4Wsg45ArE=
 		</data>
 		<key>Modules/TeeSDK.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		GgJgq3MF6oVcZAqEqHrjdg3v+0g=
+		WHZ9IWh/S2O8DMDnoP2BAYcwfD8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>QRReader.storyboardc/3SR-4A-naV-view-xY4-CL-gls.nib/objects-11.0+.nib</key>
 		<data>
-		kWVsI6HoXRwJRULMJOgfgrbzZU0=
+		Ot4jHROa7tDbmIjzGiVgrq89oHk=
 		</data>
 		<key>QRReader.storyboardc/3SR-4A-naV-view-xY4-CL-gls.nib/runtime.nib</key>
 		<data>
-		I5GA+fkZwQbbEegbSb8WbexLM+o=
+		DdsFE95YBQtymH8sTqyrmNO0hn8=
 		</data>
 		<key>QRReader.storyboardc/Info.plist</key>
 		<data>
@@ -78,19 +78,19 @@
 		</data>
 		<key>QRReader.storyboardc/qrreader.nib/objects-11.0+.nib</key>
 		<data>
-		Bfxk1c5t1xn9H+5qiWpKQgb7aMw=
+		j7jF2Bd6lTMzhZJuA1fkU53gfLI=
 		</data>
 		<key>QRReader.storyboardc/qrreader.nib/runtime.nib</key>
 		<data>
-		MDYm0cIC4JUMDusxiIyBtdcCglc=
+		j7jF2Bd6lTMzhZJuA1fkU53gfLI=
 		</data>
 		<key>TEEModalView.nib</key>
 		<data>
-		KNj7GisO5p9BxwP35/ROg7XuE28=
+		GxWuGDDj8A065BrhgKRlZF5Ad0M=
 		</data>
 		<key>TEEPointsView.nib</key>
 		<data>
-		832HuUfU02yGCxvCXExahBqAoHs=
+		T1Q+wmxtOJlG5IqNOYGTmGqD5ME=
 		</data>
 		<key>TEEWebViewController.storyboardc/Info.plist</key>
 		<data>
@@ -98,19 +98,19 @@
 		</data>
 		<key>TEEWebViewController.storyboardc/UIViewController-vdt-wL-RMX.nib/objects-11.0+.nib</key>
 		<data>
-		9N/oJ/qkuiVwP9R2/zA63fiPlzc=
+		SaZg99EYsPkeR+5j0d5ozR1RZXg=
 		</data>
 		<key>TEEWebViewController.storyboardc/UIViewController-vdt-wL-RMX.nib/runtime.nib</key>
 		<data>
-		nVXX65eahcHnLXzaEA80ajlYs0E=
+		SaZg99EYsPkeR+5j0d5ozR1RZXg=
 		</data>
 		<key>TEEWebViewController.storyboardc/vdt-wL-RMX-view-9mg-9z-igE.nib/objects-11.0+.nib</key>
 		<data>
-		9o3bp0WBSUAMflw3a1UCFfZJAMQ=
+		tAckE3hBCORdhjGJSMcMj+d1thM=
 		</data>
 		<key>TEEWebViewController.storyboardc/vdt-wL-RMX-view-9mg-9z-igE.nib/runtime.nib</key>
 		<data>
-		qtGlt/nE49R/x2KCp2CUs/9ffYM=
+		AbQv8CPlvrNeNu3EwlyoELELgcg=
 		</data>
 		<key>deeplinkRegistration.js</key>
 		<data>
@@ -127,22 +127,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nEc/rBm8EPEKt/qwYQC/vccT/t8=
+			qqHnCXXW89zxsXSI+TRXg1yxOwk=
 			</data>
 			<key>hash2</key>
 			<data>
-			oq7FSuNyMsuuGteK1e8MSWMxInaeGM+2hNikurJSOFA=
+			XhqMqj7YwY/eMbE5FclZtdb2lUnwC8RMDrl11cRL5MQ=
 			</data>
 		</dict>
 		<key>Headers/TeeSDK-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pxeZU8sWo4jZy+TROFMBt9VLGGs=
+			rapGGhl1gON7J1vyu4KToXGCpFc=
 			</data>
 			<key>hash2</key>
 			<data>
-			/AFcrfwIhuOQrzsOh51yWUMgKbOZ+ugSrWwm97DQOCQ=
+			3mKni5P8yZqrL6kZALrPUWGKrXEXUCRAw5+K4Vw7VSY=
 			</data>
 		</dict>
 		<key>Headers/Tee_iOS_SDK.h</key>
@@ -160,110 +160,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3dro/dlhuFsxgKnv/JVcB1upj/w=
+			kj4pebHTk4WgzP0Yjm4Wsg45ArE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ru96SrS2DcGcD62t9Q6xKcWrcJ2D2RxLbsQkCh7x73Q=
+			wJZFyXOGcU/DQx3oW4dNfLhiKTHV/FNsETNW3XpiUmo=
 			</data>
 		</dict>
 		<key>Modules/TeeSDK.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GgJgq3MF6oVcZAqEqHrjdg3v+0g=
+			WHZ9IWh/S2O8DMDnoP2BAYcwfD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			33rlR1Rn73FgdGJEcxWqn/MfmIos///ksezxvcud/tM=
+			f608X6aDLC357lV0Jn2lEN1N4payBJ9if3Pc006jDU0=
 			</data>
 		</dict>
 		<key>Modules/TeeSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qHfz0RQRyM4dZfuymgx0z+fW0LA=
+			b2WSl7NyLR5Z2BGtwDbhwY1d8GA=
 			</data>
 			<key>hash2</key>
 			<data>
-			hT0cJtu2qWfBVKxtOaVafS+zMDUO6zzP2N4Juio7+Nc=
+			AqSOTnQ8vR7WfFYL628Q1n7m3hh2/cZwuRATLxm7Rv0=
 			</data>
 		</dict>
 		<key>Modules/TeeSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			933w4tPT2zto7nA05kYWSdnUwV4=
+			rgN4BUFybxz32R9F8JS+l26XGfM=
 			</data>
 			<key>hash2</key>
 			<data>
-			0LmKH7+MWbStUkhgv6rHs7Ya5ZYicEfP/hzGFTYr4D8=
+			5mu8mnXhSp6hMmsY8mWdnV6dCziOvCwh+FgxYQWfJb8=
 			</data>
 		</dict>
 		<key>Modules/TeeSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qHfz0RQRyM4dZfuymgx0z+fW0LA=
+			b2WSl7NyLR5Z2BGtwDbhwY1d8GA=
 			</data>
 			<key>hash2</key>
 			<data>
-			hT0cJtu2qWfBVKxtOaVafS+zMDUO6zzP2N4Juio7+Nc=
+			AqSOTnQ8vR7WfFYL628Q1n7m3hh2/cZwuRATLxm7Rv0=
 			</data>
 		</dict>
 		<key>Modules/TeeSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			933w4tPT2zto7nA05kYWSdnUwV4=
+			rgN4BUFybxz32R9F8JS+l26XGfM=
 			</data>
 			<key>hash2</key>
 			<data>
-			0LmKH7+MWbStUkhgv6rHs7Ya5ZYicEfP/hzGFTYr4D8=
+			5mu8mnXhSp6hMmsY8mWdnV6dCziOvCwh+FgxYQWfJb8=
 			</data>
 		</dict>
 		<key>Modules/TeeSDK.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3dro/dlhuFsxgKnv/JVcB1upj/w=
+			kj4pebHTk4WgzP0Yjm4Wsg45ArE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ru96SrS2DcGcD62t9Q6xKcWrcJ2D2RxLbsQkCh7x73Q=
+			wJZFyXOGcU/DQx3oW4dNfLhiKTHV/FNsETNW3XpiUmo=
 			</data>
 		</dict>
 		<key>Modules/TeeSDK.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GgJgq3MF6oVcZAqEqHrjdg3v+0g=
+			WHZ9IWh/S2O8DMDnoP2BAYcwfD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			33rlR1Rn73FgdGJEcxWqn/MfmIos///ksezxvcud/tM=
+			f608X6aDLC357lV0Jn2lEN1N4payBJ9if3Pc006jDU0=
 			</data>
 		</dict>
 		<key>Modules/TeeSDK.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3dro/dlhuFsxgKnv/JVcB1upj/w=
+			kj4pebHTk4WgzP0Yjm4Wsg45ArE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ru96SrS2DcGcD62t9Q6xKcWrcJ2D2RxLbsQkCh7x73Q=
+			wJZFyXOGcU/DQx3oW4dNfLhiKTHV/FNsETNW3XpiUmo=
 			</data>
 		</dict>
 		<key>Modules/TeeSDK.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GgJgq3MF6oVcZAqEqHrjdg3v+0g=
+			WHZ9IWh/S2O8DMDnoP2BAYcwfD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			33rlR1Rn73FgdGJEcxWqn/MfmIos///ksezxvcud/tM=
+			f608X6aDLC357lV0Jn2lEN1N4payBJ9if3Pc006jDU0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -281,22 +281,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kWVsI6HoXRwJRULMJOgfgrbzZU0=
+			Ot4jHROa7tDbmIjzGiVgrq89oHk=
 			</data>
 			<key>hash2</key>
 			<data>
-			awA/gtoxZKFYsms40CgilTI8HPHmLjeVkqZiIr1UDG4=
+			JZvxXs+p16bEXY4SP3upsuU/QXokN+sXDf0IP97OmGk=
 			</data>
 		</dict>
 		<key>QRReader.storyboardc/3SR-4A-naV-view-xY4-CL-gls.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I5GA+fkZwQbbEegbSb8WbexLM+o=
+			DdsFE95YBQtymH8sTqyrmNO0hn8=
 			</data>
 			<key>hash2</key>
 			<data>
-			AnULZe9O5GMwBEQCbeYcNjNWqrqWFOZNDHQ133NuZ6E=
+			lrQyf2dthlK2VgXh7uDvdVurP42hEZsF+LJF1EyG3Ac=
 			</data>
 		</dict>
 		<key>QRReader.storyboardc/Info.plist</key>
@@ -314,44 +314,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Bfxk1c5t1xn9H+5qiWpKQgb7aMw=
+			j7jF2Bd6lTMzhZJuA1fkU53gfLI=
 			</data>
 			<key>hash2</key>
 			<data>
-			F4GutF7R/IbScwJvZJxZ3EIcPip7Da00Befx0XZLEgA=
+			DlcejqwnM9qCUoubk4tuW1zgMlhsJfYiFhJTcPiMcWw=
 			</data>
 		</dict>
 		<key>QRReader.storyboardc/qrreader.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MDYm0cIC4JUMDusxiIyBtdcCglc=
+			j7jF2Bd6lTMzhZJuA1fkU53gfLI=
 			</data>
 			<key>hash2</key>
 			<data>
-			1CzZGAYdWhEPKyRebu70pO5fhqiSNsM0QnFEKIHUKd4=
+			DlcejqwnM9qCUoubk4tuW1zgMlhsJfYiFhJTcPiMcWw=
 			</data>
 		</dict>
 		<key>TEEModalView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KNj7GisO5p9BxwP35/ROg7XuE28=
+			GxWuGDDj8A065BrhgKRlZF5Ad0M=
 			</data>
 			<key>hash2</key>
 			<data>
-			JTKiJwNbKH+Ocvo1XI+tV0fOUhvXJtMcrZ251x78BFY=
+			eFXvwdqh3OUPAs/plZ1U7zKijBKtH6o+akYuOyEsrWY=
 			</data>
 		</dict>
 		<key>TEEPointsView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			832HuUfU02yGCxvCXExahBqAoHs=
+			T1Q+wmxtOJlG5IqNOYGTmGqD5ME=
 			</data>
 			<key>hash2</key>
 			<data>
-			Of7HzH1GpH0d6LJV7i0AO+pP6rft1f320BHNLPLoL5w=
+			0d1v0amsvEEiULUiQbRHj5Xef+gYprKS9M4m2Vd68k0=
 			</data>
 		</dict>
 		<key>TEEWebViewController.storyboardc/Info.plist</key>
@@ -369,44 +369,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9N/oJ/qkuiVwP9R2/zA63fiPlzc=
+			SaZg99EYsPkeR+5j0d5ozR1RZXg=
 			</data>
 			<key>hash2</key>
 			<data>
-			+tJTwTYKx7UqOjzOczgWsOlPn0SXmiTKvzA2GC0v8/Q=
+			j72U+0cfO4wmqisW+7WNfaiJJKtxTbDtfr34Tdq6hyg=
 			</data>
 		</dict>
 		<key>TEEWebViewController.storyboardc/UIViewController-vdt-wL-RMX.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nVXX65eahcHnLXzaEA80ajlYs0E=
+			SaZg99EYsPkeR+5j0d5ozR1RZXg=
 			</data>
 			<key>hash2</key>
 			<data>
-			TCmJSLkj6IiVS9MU515siLHQ1F2WfA3McuPC3pzXPRA=
+			j72U+0cfO4wmqisW+7WNfaiJJKtxTbDtfr34Tdq6hyg=
 			</data>
 		</dict>
 		<key>TEEWebViewController.storyboardc/vdt-wL-RMX-view-9mg-9z-igE.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9o3bp0WBSUAMflw3a1UCFfZJAMQ=
+			tAckE3hBCORdhjGJSMcMj+d1thM=
 			</data>
 			<key>hash2</key>
 			<data>
-			a6GZU3hoUJO4X1gN8h9bqGplhZrNnU/SKLnNyJqJZd4=
+			5EdghMqUiOhbDfGgxgBMyrIvQ4bQ5EiH6xjjprRJuzk=
 			</data>
 		</dict>
 		<key>TEEWebViewController.storyboardc/vdt-wL-RMX-view-9mg-9z-igE.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qtGlt/nE49R/x2KCp2CUs/9ffYM=
+			AbQv8CPlvrNeNu3EwlyoELELgcg=
 			</data>
 			<key>hash2</key>
 			<data>
-			+7jVWwVKU67YYY6T3pueuh3n6K7HQZnZ6hToLd3IZLw=
+			sG+yaUBOdJSn5mlEP+pzAt1wN0RFPcgvFTa74vmu4vc=
 			</data>
 		</dict>
 		<key>deeplinkRegistration.js</key>
